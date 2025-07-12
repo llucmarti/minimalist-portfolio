@@ -1,18 +1,18 @@
 {
   "basics": {
-    "name": "John Doe",
-    "label": "Programmer",
+    "name": "Lluc Martí Calveres",
+    "label": "Backend-focused software engineer with over 3.5 years of experience",
     "image": "lluc.webp",
-    "email": "john@gmail.com",
-    "phone": "(912) 555-4321",
+    "email": "lluc.marti.calveres@gmail.com",
+    "phone": "",
     "url": "https://johndoe.com",
-    "summary": "A summary of John Doe…",
+    "summary": "Backend-focused software engineer with over 3.5 years of experience. Always looking for challenging environments where I can grow and contribute to impactful products.",
     "location": {
       "address": "2712 Broadway St",
       "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "city": "Madrid",
+      "countryCode": "ES",
+      "region": "Spain"
     },
     "profiles": [
       {
@@ -29,12 +29,23 @@
   },
   "work": [
     {
-      "name": "Company",
-      "position": "President",
-      "url": "https://company.com",
-      "startDate": "2013-01-01",
-      "endDate": "2014-01-01",
-      "summary": "Description…",
+      "name": "Zaleos Engineering",
+      "position": "Software Engineer II",
+      "url": "https://zaleos.net/",
+      "startDate": "2024-02-01",
+      "endDate": null,
+      "summary": "Development of REST APIs using Spring Boot, integration with external systems, CI/CD automation with GitHub Actions and Go, use of Docker, mentoring junior engineers and participating in system design discussions.",
+      "highlights": [
+        "Started the company"
+      ] 
+    },
+    {
+      "name": "Covline Consulting",
+      "position": "Software Developer ",
+      "url": "https://www.covline.es/",
+      "startDate": "2021-09-01",
+      "endDate": "2024-01-01",
+      "summary": "Backend development in Java, improvement of database performance through indexing and schema redesign, close collaboration with functional teams to adapt applications to business needs, and maintenance of internal tools.",
       "highlights": [
         "Started the company"
       ]
