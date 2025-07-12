@@ -3,10 +3,18 @@ import { basics } from "@cv"
 import Section from "@/components/Section.astro"
 import Mail from "@/icons/Mail.astro"
 import Phone from "@/icons/Phone.astro"
+import GitHub from "@/icons/GitHub.astro"
+import LinkedIn from "@/icons/LinkedIn.astro"
+import WorldMap from "@/icons/WorldMap.astro"
+import type { SocialIcon } from "@/types"
 
 const { name, label, image, location, profiles, phone, email } = basics
 const { city, region } = location
 
+const SOCIAL_ICONS: SocialIcon = {
+  GitHub,
+  LinkedIn
+}
 ---
 
 <Section>
@@ -15,11 +23,9 @@ const { city, region } = location
       <h1>{name}</h1>
       <h2>{label}</h2>
       <span>
+        <WorldMap />
         {city}, {region}
       </span>
-      <footer class="print">
-        
-      </footer>
       <footer class="no-print">
         {
           email && (
@@ -44,6 +50,23 @@ const { city, region } = location
               <Phone  />
             </a>
           )
+        }
+
+         {
+          profiles.map(({ network, url, username }) => {
+            const Icon = SOCIAL_ICONS[network]
+
+            return (
+              <a
+                href={url}
+                title={`Go to ${name}'s profile on ${network}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Icon />
+              </a>
+            )
+          })
         }
       </footer>
     </div>
